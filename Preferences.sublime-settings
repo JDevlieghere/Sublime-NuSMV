@@ -1,1 +1,15 @@
-Preferences.sublime-settings
+{
+	"trim_trailing_white_space_on_save": true,
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Makefile"
+	],
+	"rulers":
+	[
+		80
+	],
+	"spell_check": true,
+	"wrap_width": 80
+}
