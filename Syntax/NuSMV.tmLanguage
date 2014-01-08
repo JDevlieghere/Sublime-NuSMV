@@ -20,7 +20,7 @@
 			<key>match</key>
 			<string>\b(?-i:boolean|array|of|integer|real|word|word1|bool)\b</string>
 			<key>name</key>
-			<string>constant.character.nusmv</string>
+			<string>storage.type.nusmv</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -30,9 +30,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:init|next|EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V|process|case|esac|self)\b</string>
+			<string>\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V)\b</string>
 			<key>name</key>
 			<string>support.function.nusmv</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?-i:process|case|esac|self)\b</string>
+			<key>name</key>
+			<string>keyword.operator.nusmv</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?-i:init|next)\b</string>
+			<key>name</key>
+			<string>entity.name.function.nusmv</string>
 		</dict>
 		<dict>
 			<key>begin</key>
