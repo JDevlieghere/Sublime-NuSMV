@@ -30,7 +30,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V)\b</string>
+			<string>\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V|R)\b</string>
 			<key>name</key>
 			<string>support.function.nusmv</string>
 		</dict>
