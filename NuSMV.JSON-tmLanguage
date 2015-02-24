@@ -1,0 +1,64 @@
+{
+    "patterns": [
+        {
+            "name": "keyword.control.nusmv", 
+            "match": "\\b(?-i:VAR|ASSIGN|FAIRNESS|TRANS|DEFINE|MDEFINE|CONSTANTS|IVAR|INVAR|SPEC|CTLSPEC|LTLSPEC|PSLSPEC|COMPUTE|INVARSPEC|JUSTICE|COMPASSION|MODULE|ISA|CONSTRAINT|SIMPWFF|CTLWFF|LTLWFF|PSLWFF|COMPWFF|FROZENVAR|INIT|NAME|IN|MIN|MAX|MIRROR|PRED|PREDICATES|case|esac)\\b"
+        }, 
+        {
+            "name": "storage.type.nusmv", 
+            "match": "\\b(?-i:boolean|array|of|integer|real|word|word1|bool|signed|unsigned|extend|sizeof|uwconst|swconst)\\b"
+        }, 
+        {
+            "name": "constant.character.nusmv", 
+            "match": "\\b(?-i:TRUE|FALSE|self)\\b"
+        }, 
+        {
+            "name": "support.function.nusmv", 
+            "match": "\\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V|T|BU|EBF|ABF|EBG|ABG|count|toint|resize|select|process)\\b"
+
+        }, 
+        {
+            "name": "keyword.operator.nusmv", 
+            "match": "\\b(?-i:union|in|xor|xnor|mod|>>|<<| /? | /+ |-| /* |>=|<=|<|>|&| /| |!|<->|->|=|!=|%|==|//|::)\\b"
+        }, 
+        {
+            "name": "entity.name.function.nusmv", 
+            "match": "\\b(?-i:init|next)\\b"
+        }, 
+        {
+            "begin": "--", 
+            "end": "$\\n?", 
+            "name": "comment.line.nusmv", 
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.comment.nusmv"
+                }
+            }
+        }, 
+        {
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.end.nusmv"
+                }
+            }, 
+            "begin": "\"", 
+            "end": "\"", 
+            "name": "string.quoted.double.nusmv", 
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.begin.nusmv"
+                }
+            }
+        }, 
+        {
+            "name": "variable.other.nusmv", 
+            "match": "(\\$)[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+    ], 
+    "uuid": "BACC2200-7894-11E3-981F-0800200C9A66", 
+    "fileTypes": [
+        "smv"
+    ], 
+    "scopeName": "source.nusmv", 
+    "name": "NuSMV"
+}

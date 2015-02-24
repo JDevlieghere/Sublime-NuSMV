@@ -12,31 +12,31 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:VAR|ASSIGN|FAIRNESS|TRANS|DEFINE|CONSTANTS|IVAR|INVAR|SPEC|CTLSPEC|LTLSPEC|PSLSPEC|COMPUTE|INVARSPEC|JUSTICE|COMPASSION|MODULE|ISA|CONSTRAINT|SIMPWFF|CTLWFF|LTLWFF|PSLWFF|COMPWFF)\b</string>
+			<string>\b(?-i:VAR|ASSIGN|FAIRNESS|TRANS|DEFINE|MDEFINE|CONSTANTS|IVAR|INVAR|SPEC|CTLSPEC|LTLSPEC|PSLSPEC|COMPUTE|INVARSPEC|JUSTICE|COMPASSION|MODULE|ISA|CONSTRAINT|SIMPWFF|CTLWFF|LTLWFF|PSLWFF|COMPWFF|FROZENVAR|INIT|NAME|IN|MIN|MAX|MIRROR|PRED|PREDICATES|case|esac)\b</string>
 			<key>name</key>
 			<string>keyword.control.nusmv</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:boolean|array|of|integer|real|word|word1|bool)\b</string>
+			<string>\b(?-i:boolean|array|of|integer|real|word|word1|bool|signed|unsigned|extend|sizeof|uwconst|swconst)\b</string>
 			<key>name</key>
 			<string>storage.type.nusmv</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:TRUE|FALSE)\b</string>
+			<string>\b(?-i:TRUE|FALSE|self)\b</string>
 			<key>name</key>
 			<string>constant.character.nusmv</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V)\b</string>
+			<string>\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V|T|BU|EBF|ABF|EBG|ABG|count|toint|resize|select|process)\b</string>
 			<key>name</key>
 			<string>support.function.nusmv</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?-i:process|case|esac|self)\b</string>
+			<string>\b(?-i:union|in|xor|xnor|mod|&gt;&gt;|&lt;&lt;| /? | /+ |-| /* |&gt;=|&lt;=|&lt;|&gt;|&amp;| /| |!|&lt;-&gt;|-&gt;|=|!=|%|==|//|::)\b</string>
 			<key>name</key>
 			<string>keyword.operator.nusmv</string>
 		</dict>
