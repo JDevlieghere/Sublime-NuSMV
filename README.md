@@ -4,6 +4,6 @@
 
 More information about NuSMV can be found on their [home page](http://nusmv.fbk.eu/NuSMV/).
 
-# Contributions 
+## Contributions 
 
 Thank you [Francesco Gramano](https://github.com/g2graman) for significantly improving the syntax! 
