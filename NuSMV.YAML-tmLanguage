@@ -10,10 +10,14 @@ patterns:
   name: constant.character.nusmv
 - match: \b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V|T|BU|EBF|ABF|EBG|ABG|count|toint|resize|select|process)\b
   name: support.function.nusmv
-- match: \b(?-i:union|in|xor|xnor|mod|>>|<<| /? | /+ |-| /* |>=|<=|<|>|&| /| |!|<->|->|=|!=|%|==|//|::)\b
+- match: \b(?-i:union|in|xor|xnor|mod|>>|<<|\?|\+|-|\*|>=|<=|<|>|&|\||!|<->|->|=|!=|%|==|//|::|:=)\b
   name: keyword.operator.nusmv
 - match: \b(?-i:init|next)\b
   name: entity.name.function.nusmv
+- match: \b(\d+..\d+|\d+[.\d+]?)\b
+  name: constant.numeric.nusmv
+- match: \b(?-i:[A-Za-z_][a-zA-Z0-9_]*)\b
+  name: variable.language.nusmv
 - begin: --
   beginCaptures:
     '0':
